@@ -93,13 +93,13 @@ $$W_{\text{composed}} = W_{\text{Spanish}} + W_{\text{legal}} - W_{\text{base}}$
 To reproduce the experiments in Kaggle:
 
 ```bash
-pip install -q \
+%pip uninstall -y torchao
+%pip install -q \
     "transformers==5.15.0" \
     "peft==0.20.0" \
     "datasets==5.0.1" \
     "accelerate>=1.8.0,<2" \
-    safetensors sentencepiece matplotlib pandas numpy
-
+    safetensors sentencepiece
 ```
 
 ### Hardware Requirements
